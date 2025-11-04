@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Star Rating App</title>
 	<link href="./style.css" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+		integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-	<h1>Hello, World</h1>
+	<div class="wrapper">
+		<div class="post">
+			<div class="text">Thanks for rating us!</div>
+			<div class="edit">EDIT</div>
+		</div>
+
+		<!-- Stars -->
+		<div class="star-widget">
+			<input type="radio" id="rate-5" name="rate">
+			<label for="rate-5" class="fas fa-star"></label>
+			
+			<input type="radio" id="rate-4" name="rate">
+			<label for="rate-4" class="fas fa-star"></label>
+			
+			<input type="radio" id="rate-3" name="rate">
+			<label for="rate-3" class="fas fa-star"></label>
+			
+			<input type="radio" id="rate-2" name="rate">
+			<label for="rate-2" class="fas fa-star"></label>
+			
+			<input type="radio" id="rate-1" name="rate">
+			<label for="rate-1" class="fas fa-star"></label>
+
+			<!-- Form -->
+			 <form action="#">
+				<header></header>
+				<div class="btn">
+					<button type="submit">Rate</button>
+				</div>
+			 </form>
+
+		</div>
+	</div>
+
 	<script src="./main.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,114 @@
+html, body {
+	font-family: fantasy, sans-serif;
+	text-align: center;
+
+	height: 100vh;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrapper {
+	position: relative;
+	width: 400px;
+	padding: 50px 90px;
+	margin: 20px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 20px;
+
+	background-color: black;
+}
+
+.post {
+	display: none;
+}
+
+.text {
+	font-size: 25px;
+	color: azure;
+}
+
+.edit, .btn button {
+	display: inline-block;
+
+	background-color: rgb(59, 154, 232);
+	color: white;
+
+	border: none;
+	border-radius: 2px;
+
+	padding: 10px 20px;
+	margin-top: 20px;
+	margin-bottom: -10px;
+
+	cursor: pointer;
+}
+
+.btn button {
+	font-weight: 900;
+}
+
+.star-widget input {
+	display: none;
+}
+
+.star-widget label {
+	font-size: 40px;
+	color: #444;
+
+	float: right;
+	padding: 10px;
+	transition: all 0.2s ease;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label
+{
+	color: yellow;
+}
+
+input:checked ~ label {
+	color: yellow;
+}
+
+#rate-1:checked ~ form header:before {
+	content: "I hate it";
+}
+
+#rate-2:checked ~ form header:before {
+	content: "I don't like it";
+}
+
+#rate-3:checked ~ form header:before {
+	content: "It’s okay";
+}
+
+#rate-4:checked ~ form header:before {
+	content: "I like it";
+}
+
+#rate-5:checked ~ form header:before {
+	content: "I love it";
+}
+
+.wrapper form {
+	display: none;
+}
+
+input:checked ~ form {
+	display: block;
+}
+
+form header {
+	width: 100%;
+
+	font-size: 25px;
+	color: yellow;
+	transition: all 0.2s ease;
+}
