@@ -1,0 +1,37 @@
+body {
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background: linear-gradient(90deg, black, rgb(146, 146, 146));
+
+	color: white;
+	font-family: sans-serif;
+	font-size: 2rem;
+}
+
+#span {
+	color: rgb(255, 255, 106);
+	position: relative;
+}
+
+#span::before {
+	content: "";
+
+	position: absolute;
+	width: 3px;
+	height: 60px;
+	top: 50%;
+	right: -8px;
+	transform: translateY(-50%);
+
+	animation: blink 0.7s infinite;
+
+	background-color: deeppink;
+}
+
+@keyframes blink {
+	50% { opacity: 0;}
+}
