@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Animated Counter App</title>
+	<link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="header">
+		<video autoplay muted loop id="bg-video">
+			<source src="./video/rain.mp4" type="video/mp4">
+		</video>
+		<h1>Animated Counters</h1>
+	</div>
+	<div class="wrapper">
+		<div class="counters">
+			<!-- Web Projects -->
+			<div class="web-project-div">
+				<div data-target="4000" class="counter">0</div>
+				<h3>Web Projects</h3>
+			</div>
+
+			<!-- Courses -->
+			<div class="course-div">
+				<div data-target="1000" class="counter">0</div>
+				<h3>Courses</h3>
+			</div>
+
+			<!-- Happy Students -->
+			<div class="happy-student-div">
+				<div data-target="9000" class="counter">0</div>
+				<h3>Happy Students</h3>
+			</div>
+
+			<!-- Learnings -->
+			<div class="learning-div">
+				<div data-target="5000" class="counter">0</div>
+				<h3>Learnings</h3>
+			</div>
+
+
+		</div>
+	</div>
+
+	<script src="./main.js"></script>
+</body>
+
+</html>
