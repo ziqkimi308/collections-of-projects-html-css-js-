@@ -1,0 +1,52 @@
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	height: 100vh;
+
+	font-family: sans-serif;
+}
+
+#search-input {
+	padding: 5px 10px;
+	width: 500px;
+	margin: 30px;
+}
+
+#item-list {
+	list-style: none;
+	width: 400px;
+}
+
+.item {
+	padding: 20px;
+	margin: 10px;
+
+	border-radius: 10px;
+
+	transition: transform 0.3s ease-in-out;
+}
+
+.item:hover {
+	transform: scale(1.05);
+	font-weight: bold;
+}
+
+.item:nth-child(even) {
+	background: linear-gradient(
+		300deg,
+		rgba(179, 1, 255, 0.5),
+		rgba(179, 1, 255, 1)
+	);
+	color: white;
+}
+
+.item:nth-child(odd) {
+	background: linear-gradient(
+		300deg,
+		rgba(255, 157, 0, 0.5),
+		rgb(255, 123, 0, 1)
+	);
+	color: white;
+}
